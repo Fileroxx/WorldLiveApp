@@ -1,0 +1,69 @@
+#vistos {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+#vistos h3 {
+  font-weight: 600;
+  padding-bottom: 2rem;
+}
+
+#vistos .cards {
+  display: flex;
+}
+
+#vistos .card {
+  border-radius: 10px;
+  margin-right: 30px;
+  transition: all ease 0.3s;
+}
+
+#vistos .card:hover {
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+#vistos .horario {
+  display: flex;
+  justify-content: left;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+#vistos .horario p {
+  color: #ff2948;
+}
+
+#vistos .horario span {
+  color: rgb(182, 179, 179);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#vistos .titulo h4 {
+  padding-left: 1rem;
+  font-weight: 600;
+}
+
+#vistos .local p {
+  color: #c4c4c4;
+  padding-left: 1rem;
+}
+
+@media screen and (max-width: 458px) {
+  #vistos h3 {
+    text-align: center;
+  }
+
+  #vistos .cards {
+    flex-direction: column;
+  }
+
+  #vistos .card {
+    margin-top: 3rem;
+  }
+
+  #vistos .imagem img {
+    width: 100%;
+  }
+}

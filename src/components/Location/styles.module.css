@@ -1,0 +1,39 @@
+.location .icone {
+  color: #1e782f;
+  margin-top: 0rem;
+}
+
+.location button {
+  font-weight: 400;
+  color: #4c576c;
+}
+
+.iconeProcurar {
+  color: #1e782f;
+}
+
+#modal .botaoProcurar {
+  text-transform: none;
+  color: #4c576c;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+#modal .atual {
+  text-transform: none;
+  color: #4c576c;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+#modal .gpsicon {
+  color: rgb(0, 151, 255);
+}
+
+#modal .atualLocalizacao {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  width: 100%;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}

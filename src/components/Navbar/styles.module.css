@@ -1,0 +1,49 @@
+#navbar {
+  position: sticky;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.navbar .swiper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar .logo {
+  padding-left: 1rem;
+  cursor: pointer;
+}
+
+.navbar button {
+  margin-top: 1rem;
+  padding-left: 1rem;
+  color: #191f28;
+}
+
+.navbar .botaoCadastro {
+  color: #1e782f;
+  border: 1px solid #1e782f;
+  border-radius: 10px;
+  padding: 0.8rem;
+  margin-left: 2rem;
+}
+
+@media screen and (max-width: 458px) {
+  .navbar .botoes {
+    display: none;
+  }
+
+  .navbar .logo {
+    width: 35vw;
+  }
+
+  .navbar .botaoCadastro {
+    display: none;
+  }
+}

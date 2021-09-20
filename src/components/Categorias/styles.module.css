@@ -1,0 +1,69 @@
+#categorias {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+#categorias h3 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #191f28;
+  padding-bottom: 2rem;
+}
+
+#categorias .imagemCategoria {
+  box-shadow: 2px 1px 15px -9px #000000;
+  overflow: hidden;
+  transition: border-radius 0.3s ease-in-out 0s;
+}
+
+#categorias .imagemCategoria:hover {
+}
+
+#categorias .swiper {
+  margin-left: 1rem;
+}
+
+#categorias .nomeCategoria {
+  font-size: 16px;
+  color: rgb(76, 87, 108);
+  letter-spacing: 0.1px;
+  text-decoration: none;
+
+  padding-bottom: 3rem;
+  padding-top: 10px;
+  font-weight: 300;
+  font-family: "Open Sans", sans-serif;
+}
+
+#categorias .verMais {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-top: 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: rgb(0, 151, 255);
+}
+
+#categorias .seta {
+  width: 25%;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 458px) {
+  #categorias h3 {
+    text-align: center;
+  }
+}

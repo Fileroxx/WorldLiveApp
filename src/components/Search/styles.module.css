@@ -1,0 +1,18 @@
+.botaoPesquisa {
+  color: #1e782f;
+}
+
+.pooper {
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.08);
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  margin-left: 5%;
+}
+
+@media screen and (max-width: 458px) {
+  #pesquisa {
+    display: none;
+  }
+}
