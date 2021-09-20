@@ -20,7 +20,7 @@ export default function Eventos(){
 
     <div className={styles.horario}>
         <p>17 AGO</p>
-        <span> > </span>
+        <span>`{'>'}` </span>
         <p>20 AGO</p>
     </div>
 
@@ -44,7 +44,7 @@ export default function Eventos(){
 
     <div className={styles.horario}>
         <p>17 AGO</p>
-        <span> > </span>
+        <span>`{'>'}` </span>
         <p>20 AGO</p>
     </div>
 
@@ -68,7 +68,7 @@ export default function Eventos(){
 
     <div className={styles.horario}>
         <p>17 AGO</p>
-        <span> > </span>
+        <span> `{'>'}` </span>
         <p>20 AGO</p>
     </div>
 

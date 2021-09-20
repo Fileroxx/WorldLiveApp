@@ -7,11 +7,11 @@ export default function Footer() {
             <Container>
                
                 <div className={styles.logo}>
-                    <center>
+                
 
                      <img src="logoWhite.png" alt=""/>
                      
-                    </center>
+                   
                
                 </div>
 

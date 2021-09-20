@@ -47,7 +47,7 @@ export default function Destaques(){
                     </Button>
 
 
-                    <center>
+               
 
                     <Button
                         className={styles.botaoMobile}
@@ -57,7 +57,7 @@ export default function Destaques(){
                         VER DETALHES
                     </Button>
 
-                    </center>
+
 
 
                 </Col>

@@ -1,4 +1,4 @@
-import { Button, Checkbox, createStyles, Divider, FormControl, FormControlLabel, Grid, IconButton, Input, InputAdornment, InputLabel, makeStyles, TextField } from '@material-ui/core';
+import { Button, Checkbox, createStyles, Divider, FormControl, FormControlLabel, Grid, IconButton, Input, InputAdornment, InputLabel, makeStyles, TextField, Theme } from '@material-ui/core';
 import { AccountCircle, MailOutlined, PermIdentity } from '@material-ui/icons';
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
@@ -10,6 +10,9 @@ import Link from 'next/link';
 import PermIdentityIcon from '@material-ui/icons/PermIdentity';
 
 
+interface State {
+    password: string;
+}
 
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -51,7 +54,8 @@ export default function SignIn(){
 
                     <Col>
                         <div className={styles.cardCadastro}>
-                        <center>
+
+
 
 
                         <h3>Cadastro</h3>
@@ -87,26 +91,25 @@ export default function SignIn(){
                         
                         <div className={styles.senha}>
                          <LockIcon className={styles.icone} />
-                          <Input 
-                        type={values.showPassword ? 'text' : 'password'}
-                        value={values.password}
-                        onChange={handleChange('password')}
-                        endAdornment={
+
+                         <Input
+                            className={styles.inputSenha}
+                            id="standard-adornment-password"
+                            type={values.showPassword ? 'text' : 'password'}
+                            value={values.password}
+                            onChange={handleChange('password')}
+                            endAdornment={
                             <InputAdornment position="end">
                                 <IconButton
-                                    aria-label="toggle password visibility"
-                                    onClick={handleClickShowPassword}
-                                    onMouseDown={handleMouseDownPassword}
+                                aria-label="toggle password visibility"
+                                onClick={handleClickShowPassword}
+                                onMouseDown={handleMouseDownPassword}
                                 >
-                                    {values.showPassword ? <Visibility /> : <VisibilityOff />}
+                                {values.showPassword ? <Visibility /> : <VisibilityOff />}
                                 </IconButton>
                             </InputAdornment>
-                           
-                        
-                        }
-                        className={styles.inputSenha} 
-                        >
-                        </Input>
+                            }
+                        />
                         </div>
 
                         
@@ -136,7 +139,7 @@ export default function SignIn(){
 
                         
                        
-                        </center>
+
                           
 
 

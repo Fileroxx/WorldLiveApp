@@ -9,7 +9,9 @@
 #cadastro .cardCadastro {
   background: #fff;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  padding: 5rem;
+  text-align: center;
   justify-content: center;
   padding-top: 3rem;
   box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
@@ -27,19 +29,20 @@
   margin-top: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  padding-left: 6rem;
-  padding-right: 6rem;
+  padding-left: 8em;
+  padding-right: 8rem;
   margin-bottom: 2rem;
 }
 
 #cadastro .email {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding-bottom: 1rem;
 }
 
 #cadastro .inputEmail {
-  width: 20vw;
+  width: 25vw;
 }
 
 #cadastro .icone {
@@ -50,12 +53,13 @@
 
 #cadastro .senha {
   display: flex;
+  justify-content: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
 #cadastro .inputSenha {
-  width: 20vw;
+  width: 25vw;
 }
 
 #cadastro .login {
@@ -73,6 +77,7 @@
 
 #cadastro .conectado {
   margin-top: 1rem;
+  justify-content: center;
 }
 
 .esqueceu p {

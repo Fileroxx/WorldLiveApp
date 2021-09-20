@@ -1,12 +1,17 @@
-import { Button, Checkbox, createStyles, Divider, FormControl, FormControlLabel, Grid, IconButton, Input, InputAdornment, InputLabel, makeStyles, TextField } from '@material-ui/core';
+import { Button, Checkbox, createStyles, Divider, FilledInput, FormControl, FormControlLabel, Grid, IconButton, Input, InputAdornment, InputLabel, makeStyles, TextField, Theme } from '@material-ui/core';
 import { AccountCircle, MailOutlined } from '@material-ui/icons';
-import React from 'react';
+import React, { useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import styles from './styles.module.css';
 import Visibility from '@material-ui/icons/Visibility';
 import VisibilityOff from '@material-ui/icons/VisibilityOff';
 import LockIcon from '@material-ui/icons/Lock';
 import Link from 'next/link'
+
+interface State {
+    password: string;
+  }
+
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -47,7 +52,7 @@ export default function LogIn(){
 
                     <Col>
                         <div className={styles.cardCadastro}>
-                        <center>
+                
 
 
                         <h3>Login</h3>
@@ -73,26 +78,25 @@ export default function LogIn(){
                         
                         <div className={styles.senha}>
                          <LockIcon className={styles.icone} />
-                          <Input 
-                        type={values.showPassword ? 'text' : 'password'}
-                        value={values.password}
-                        onChange={handleChange('password')}
-                        endAdornment={
+
+                         <Input
+                            className={styles.inputSenha}
+                            id="standard-adornment-password"
+                            type={values.showPassword ? 'text' : 'password'}
+                            value={values.password}
+                            onChange={handleChange('password')}
+                            endAdornment={
                             <InputAdornment position="end">
                                 <IconButton
-                                    aria-label="toggle password visibility"
-                                    onClick={handleClickShowPassword}
-                                    onMouseDown={handleMouseDownPassword}
+                                aria-label="toggle password visibility"
+                                onClick={handleClickShowPassword}
+                                onMouseDown={handleMouseDownPassword}
                                 >
-                                    {values.showPassword ? <Visibility /> : <VisibilityOff />}
+                                {values.showPassword ? <Visibility /> : <VisibilityOff />}
                                 </IconButton>
                             </InputAdornment>
-                           
-                        
-                        }
-                        className={styles.inputSenha} 
-                        >
-                        </Input>
+                            }
+                        />
                         </div>
 
                         
@@ -130,8 +134,7 @@ export default function LogIn(){
                         </Container>
 
                         
-                       
-                        </center>
+ 
                           
 
 
